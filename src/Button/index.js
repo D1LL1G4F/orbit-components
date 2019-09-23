@@ -101,9 +101,7 @@ export const StyledButton = styled(
   appearance: none;
   text-decoration: none;
   width: ${({ block, width, onlyIcon }) =>
-    block
-      ? "100%"
-      : (width && `${width}px`) || (onlyIcon && getSizeToken(TOKENS.heightButton)) || "auto"};
+    block ? "100%" : width || (onlyIcon && getSizeToken(TOKENS.heightButton)) || "auto"};
   flex: ${({ block }) => (block ? "1 1 auto" : "0 0 auto")};
   height: ${getSizeToken(TOKENS.heightButton)};
   background: ${({ bordered }) =>
@@ -221,7 +219,7 @@ const Button = React.forwardRef((props: Props, ref: Ref) => {
     type = TYPE_OPTIONS.PRIMARY,
     block,
     loading = false,
-    width = 0,
+    width,
     role,
     onClick,
     circled,

@@ -95,9 +95,7 @@ export const StyledButtonLink = styled(
   justify-content: center;
   align-items: center;
   width: ${({ block, width, onlyIcon }) =>
-    block
-      ? "100%"
-      : (width && `${width}px`) || (onlyIcon && getSizeToken(TOKENS.heightButton)) || "auto"};
+    block ? "100%" : width || (onlyIcon && getSizeToken(TOKENS.heightButton)) || "auto"};
   flex: ${({ block }) => (block ? "1 1 auto" : "0 0 auto")};
   height: ${getSizeToken(TOKENS.heightButton)};
   background: ${getTypeToken(TOKENS.backgroundButton)};
@@ -171,7 +169,7 @@ const ButtonLink = React.forwardRef((props: Props, ref: Ref) => {
     iconRight,
     type = TYPES.PRIMARY,
     onClick,
-    width = 0,
+    width,
     role,
     disabled,
     circled,

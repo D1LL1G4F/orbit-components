@@ -14490,7 +14490,6 @@ exports[`Default Stack should match snapshot 1`] = `
               }
             }
             type="primary"
-            width={0}
           >
             <StyledComponent
               buttonRef={null}
@@ -15520,7 +15519,6 @@ exports[`Default Stack should match snapshot 1`] = `
                 }
               }
               type="primary"
-              width={0}
             >
               <Component
                 buttonRef={null}
@@ -16004,7 +16002,6 @@ exports[`Default Stack should match snapshot 1`] = `
                   }
                 }
                 type="primary"
-                width={0}
               >
                 <button
                   className="c8"
@@ -32619,7 +32616,6 @@ exports[`Stack with enabled flex should match snapshot 1`] = `
                 }
               }
               type="primary"
-              width={0}
             >
               <StyledComponent
                 buttonRef={null}
@@ -33649,7 +33645,6 @@ exports[`Stack with enabled flex should match snapshot 1`] = `
                   }
                 }
                 type="primary"
-                width={0}
               >
                 <Component
                   buttonRef={null}
@@ -34133,7 +34128,6 @@ exports[`Stack with enabled flex should match snapshot 1`] = `
                     }
                   }
                   type="primary"
-                  width={0}
                 >
                   <button
                     className="c8"
@@ -50642,7 +50636,6 @@ exports[`Stack with flex prop should match snapshot 1`] = `
               }
             }
             type="primary"
-            width={0}
           >
             <StyledComponent
               buttonRef={null}
@@ -51672,7 +51665,6 @@ exports[`Stack with flex prop should match snapshot 1`] = `
                 }
               }
               type="primary"
-              width={0}
             >
               <Component
                 buttonRef={null}
@@ -52156,7 +52148,6 @@ exports[`Stack with flex prop should match snapshot 1`] = `
                   }
                 }
                 type="primary"
-                width={0}
               >
                 <button
                   className="c8"

@@ -590,7 +590,6 @@ exports[`ButtonLink with Icon should match snapshot 1`] = `
       }
     }
     type="primary"
-    width={0}
   >
     <StyledComponent
       ariaControls="element"
@@ -1611,7 +1610,6 @@ exports[`ButtonLink with Icon should match snapshot 1`] = `
         }
       }
       type="primary"
-      width={0}
     >
       <Component
         ariaControls="element"
@@ -2104,7 +2102,6 @@ exports[`ButtonLink with Icon should match snapshot 1`] = `
           }
         }
         type="primary"
-        width={0}
       >
         <a
           aria-controls="element"
@@ -2837,7 +2834,6 @@ exports[`ButtonLink with Icon should match snapshot 2`] = `
     }
     title="With left and right icon"
     type="primary"
-    width={0}
   >
     <StyledComponent
       ariaControls="element"
@@ -3855,7 +3851,6 @@ exports[`ButtonLink with Icon should match snapshot 2`] = `
       }
       title="With left and right icon"
       type="primary"
-      width={0}
     >
       <Component
         ariaControls="element"
@@ -4345,7 +4340,6 @@ exports[`ButtonLink with Icon should match snapshot 2`] = `
         }
         title="With left and right icon"
         type="primary"
-        width={0}
       >
         <a
           aria-controls="element"
