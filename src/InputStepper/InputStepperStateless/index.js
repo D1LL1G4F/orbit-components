@@ -11,16 +11,6 @@ import defaultTheme from "../../defaultTheme";
 import getSpacingToken from "../../common/getSpacingToken";
 import type { StateLessProps } from "./index.js.flow";
 
-const PrefixSuffix = styled(({ type, ...props }) => <div {...props} />)`
-  flex-shrink: 0;
-  z-index: 3;
-  cursor: ${({ disabled }) => disabled && "not-allowed"};
-`;
-
-PrefixSuffix.defaultProps = {
-  theme: defaultTheme,
-};
-
 const StyledInputStepper = styled.div`
   width: 100%;
   margin-bottom: ${getSpacingToken};
@@ -103,6 +93,7 @@ const InputStepperStateless = ({
         prefix={
           <StyledButtonWrapper role="button" tabIndex="0" onKeyDown={onDecrement}>
             <ButtonLink
+              type="secondary"
               disabled={
                 disabledDecrement || disabled || (typeof value === "number" && value <= +minValue)
               }
@@ -118,6 +109,7 @@ const InputStepperStateless = ({
         suffix={
           <StyledButtonWrapper role="button" tabIndex="0" onKeyDown={onIncrement}>
             <ButtonLink
+              type="secondary"
               disabled={
                 disabledIncrement || disabled || (typeof value === "number" && value >= +maxValue)
               }
