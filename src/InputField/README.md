@@ -76,7 +76,9 @@ Table below contains all types of the props available in InputField component.
 ```jsx
 <InputField
   placeholder="My placeholder"
-  suffix={<ButtonLink transparent icon={<Visibility />} />}
+  suffix={
+    <ButtonLink transparent icon={<Visibility />} type="secondary" />
+  }
 />
 ```
 
