@@ -10,7 +10,6 @@ After adding import into your project you can use it simply like:
 ## Props
 Table below contains all types of the props available in Tile component.
 
-  +header?: React$Node,
 | Name            | Type                          | Default         | Description                      |
 | :-------------- | :---------------------------- | :-------------- | :------------------------------- |
 | dataTest        | `string`                      |                 | Optional prop for testing purposes.
