@@ -27,6 +27,8 @@ StyledInputStepper.defaultProps = {
   theme: defaultTheme,
 };
 
+const PrefixSuffix = props => <div {...props} />;
+
 const InputStepperStateless = ({
   label,
   error,
@@ -75,36 +77,32 @@ const InputStepperStateless = ({
         tabIndex={tabIndex}
         ref={forwardedRef}
         prefix={
-          <StyledButtonWrapper role="button" tabIndex="0" onKeyDown={onDecrement}>
-            <ButtonLink
-              type="secondary"
-              disabled={
-                disabledDecrement || disabled || (typeof value === "number" && value <= +minValue)
-              }
-              iconLeft={<MinusCircle color="secondary" />}
-              size={size}
-              onClick={onDecrement}
-              transparent
-              asComponent={PrefixSuffix}
-              title={titleDecrement}
-            />
-          </StyledButtonWrapper>
+          <ButtonLink
+            type="secondary"
+            disabled={
+              disabledDecrement || disabled || (typeof value === "number" && value <= +minValue)
+            }
+            iconLeft={<MinusCircle color="secondary" />}
+            size={size}
+            onClick={onDecrement}
+            transparent
+            asComponent={PrefixSuffix}
+            title={titleDecrement}
+          />
         }
         suffix={
-          <StyledButtonWrapper role="button" tabIndex="0" onKeyDown={onIncrement}>
-            <ButtonLink
-              type="secondary"
-              disabled={
-                disabledIncrement || disabled || (typeof value === "number" && value >= +maxValue)
-              }
-              iconLeft={<PlusCircle color="secondary" />}
-              size={size}
-              onClick={onIncrement}
-              transparent
-              asComponent={PrefixSuffix}
-              title={titleIncrement}
-            />
-          </StyledButtonWrapper>
+          <ButtonLink
+            type="secondary"
+            disabled={
+              disabledIncrement || disabled || (typeof value === "number" && value >= +maxValue)
+            }
+            iconLeft={<PlusCircle color="secondary" />}
+            size={size}
+            onClick={onIncrement}
+            transparent
+            asComponent={PrefixSuffix}
+            title={titleIncrement}
+          />
         }
       />
     </StyledInputStepper>
